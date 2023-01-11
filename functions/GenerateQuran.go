@@ -33,7 +33,7 @@ func GenerateQuran() {
 		return
 	}
 
-	for _, surah := range surahs[113:] {
+	for _, surah := range surahs {
 
 		// Create a folder for each Surah
 
@@ -61,3 +61,5 @@ func GenerateQuran() {
 	}
 
 }
+
+// res, err := http.Get("https://quranenc.com/api/v1/translation/sura/english_saheeh/1?translation_key=english_rwwad&sura_number=110")

@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 
 	"github.com/omeiirr/quran-obsidian-template/models"
 	"github.com/omeiirr/quran-obsidian-template/templates"
@@ -35,18 +36,20 @@ func GenerateQuran() {
 	for _, surah := range surahs[113:] {
 
 		// Create a folder for each Surah
-		surahFilepath := fmt.Sprintf("./Quranic Guidance/%d %s (%s)", surah.Id, surah.Transliteration, surah.Translation)
+
+		// Windows does not allow special characters in filename
+		// Problem detected for surah-38 with Translation as `"The Letter \"Saad\""` from API
+		filename := strings.ReplaceAll(surah.Translation, "\"", "'")
+
+		surahFilepath := fmt.Sprintf("./Quranic Guidance/Surahs/%d %s (%s)", surah.Id, surah.Transliteration, filename)
 		err = os.MkdirAll(surahFilepath, 0750)
 		if err != nil {
 			log.Fatalf("Failed to create Surah folders: %s", err)
 		}
 
-		fmt.Printf("\nTotal verses: %d \n", surah.TotalVerses)
+		fmt.Printf("\nGenerating Surah: %s", surah.Translation)
 		for _, ayat := range surah.Verses {
-			fmt.Printf("%d ", ayat.Id)
-
 			filename := fmt.Sprintf("%s/%d-%d.md", surahFilepath, surah.Id, ayat.Id)
-			// content := []byte(verse.Text)
 			content := []byte(
 				fmt.Sprintf(templates.AyatTemplate, surah.Type, ayat.Text, ayat.Translation))
 

@@ -62,7 +62,7 @@ You can add your own tags to group similar-themed Ayats together.
 ---
 
 ### How to Use
-The easiest method is to download the suitable executable file according to your OS (Windows, MacOS, or Linux) from the [releases]() page and execute it on your machine. A new folder "Quranic Guidance" will be setup in the working directory as described in [Folder Structure](https://github.com/omeiirr/quran-obsidian-template/edit/main/README.md#folder-structure).
+The easiest method is to download the suitable executable file according to your OS (Windows, MacOS, or Linux) from the [releases](https://github.com/omeiirr/quran-obsidian-template/releases/tag/v1.0.0) page and execute it on your machine. A new folder "Quranic Guidance" will be setup in the working directory as described in [Folder Structure](https://github.com/omeiirr/quran-obsidian-template/edit/main/README.md#folder-structure).
 
 If you have Go installed on your machine, you can also use it to setup the project.
 1. Clone this repository with `git clone https://github.com/omeiirr/quran-obsidian-template.git`

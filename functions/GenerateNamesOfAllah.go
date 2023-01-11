@@ -13,15 +13,10 @@ import (
 	"github.com/omeiirr/quran-obsidian-template/templates"
 )
 
-func GenerateNamesOfAllah() {
-	content, err := ioutil.ReadFile("./data/asma-ul-husna.json")
-	if err != nil {
-		log.Fatal("Error when opening file: ", err)
-	}
-
+func GenerateNamesOfAllah(embedded_file []byte) {
 	var names []models.NameOfAllah
 
-	err = json.Unmarshal(content, &names)
+	err := json.Unmarshal(embedded_file, &names)
 	if err != nil {
 		log.Fatal("Error during unmarshall: ", err)
 	}

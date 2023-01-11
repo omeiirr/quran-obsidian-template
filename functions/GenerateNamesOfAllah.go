@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"strings"
@@ -14,6 +13,7 @@ import (
 )
 
 func GenerateNamesOfAllah(embedded_file []byte) {
+	fmt.Println("Generating names of Allah...")
 	var names []models.NameOfAllah
 
 	err := json.Unmarshal(embedded_file, &names)

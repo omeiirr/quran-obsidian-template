@@ -23,5 +23,5 @@ func main() {
 	functions.GenerateQuran()
 
 	elapsedTime := time.Since(startTime)
-	fmt.Printf("Operation completed in %s", elapsedTime)
+	fmt.Printf("\n\nAlhamdulillah! Operation completed in %s \nHappy learning.\n", elapsedTime)
 }

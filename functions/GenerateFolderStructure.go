@@ -9,7 +9,7 @@ import (
 func GenerateFolderStructure() {
 	fmt.Println("Generating folder structure...")
 	// Create main folder
-	err := os.MkdirAll("Quranic Guidance", 0750)
+	err := os.MkdirAll("./Quranic Guidance", 0750)
 	if err != nil {
 		log.Fatalf("Failed to create vault folder: %s", err)
 	}

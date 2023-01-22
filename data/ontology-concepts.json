@@ -262,7 +262,8 @@
   "Concepts/Location/Geographical Location/Mountain/Mount Arafat (عرفات).md",
   "Concepts/Location/Geographical Location/Mountain/Mount Sinai (طور سيناء).md",
 
-  "Concepts/Physical Attribute/Color (لَون).md",
+  "Concepts/Physical Attribute/Color (لَون)/Color (لَون).md",
+  "Concepts/Physical Attribute/Color (لَون)/Green (أخضر).md",
 
   "Concepts/Physical Substance/Clay (صلصال).md",
   "Concepts/Physical Substance/Coral (مرجان).md",
@@ -289,5 +290,5 @@
   "Concepts/Weather Phenomena/Cloud (سحاب).md",
   "Concepts/Weather Phenomena/Lightning (برق).md",
   "Concepts/Weather Phenomena/Rain (مطر).md",
-  "Concepts/Weather Phenomena/Thunder (رعد)"
+  "Concepts/Weather Phenomena/Thunder (رعد).md"
 ]

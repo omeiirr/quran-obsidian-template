@@ -19,8 +19,7 @@ func main() {
 	startTime := time.Now()
 
 	functions.GenerateFolderStructure()
-	functions.GenerateNamesOfAllah(embedded_file)
-	functions.GenerateQuran()
+	functions.GenerateQuran(1, 114)
 
 	elapsedTime := time.Since(startTime)
 	fmt.Printf("\n\nAlhamdulillah! Operation completed in %s \nHappy learning.\n", elapsedTime)

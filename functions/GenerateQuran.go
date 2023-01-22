@@ -13,8 +13,11 @@ import (
 	"github.com/omeiirr/quran-obsidian-template/templates"
 )
 
-func GenerateQuran() {
+func GenerateQuran(startSurah, endSurah int) {
 
+	if startSurah < 1 || endSurah > 114 {
+		log.Fatal("Invalid range for Surahs.")
+	}
 	res, err := http.Get("https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_en.json")
 
 	if err != nil {
@@ -33,7 +36,9 @@ func GenerateQuran() {
 		return
 	}
 
-	for _, surah := range surahs {
+	// -1 because of zero-based indexing
+	// endSurah index is not included in range, so no -1
+	for _, surah := range surahs[startSurah-1 : endSurah] {
 
 		// Create a folder for each Surah
 

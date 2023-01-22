@@ -15,7 +15,7 @@ func GenerateFolderStructure() {
 	}
 
 	// Additional sub-folders for better organisation
-	directories := []string{"People/Prophets", "Themes/God", "Themes/Man", "Themes/Angels"}
+	directories := []string{""}
 
 	for _, dir := range directories {
 		filepath := fmt.Sprintf("./Quranic Guidance/%s", dir)

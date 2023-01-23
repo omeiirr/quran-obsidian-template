@@ -68,6 +68,10 @@ If you have Go installed on your machine, you can also use it to setup the proje
 2. `cd quran-obsidian-template`
 3. `go run .`
 
+If you are unable to get the executable running on your system, you can directly download the compressed `QuranicGuidance` zip folder from [here](https://github.com/omeiirr/quran-obsidian-template/releases/download/v1.1.0/QuranicGuidance.zip) which contains all the features, and decompress it on your device.
+
+Happy learning! :)
+
 ### Contributing
 All contributions are welcome. Please feel free to submit issues and PRs for feature additions, bug-fixes, or enhancements.
 

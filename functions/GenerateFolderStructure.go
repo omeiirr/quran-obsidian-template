@@ -6,10 +6,11 @@ import (
 	"os"
 )
 
-func GenerateFolderStructure() {
+func GenerateFolderStructure(workingDir string) {
 	fmt.Println("Generating folder structure...")
 	// Create main folder
-	err := os.MkdirAll("./Quranic Guidance", 0750)
+
+	err := os.MkdirAll(workingDir, 0750)
 	if err != nil {
 		log.Fatalf("Failed to create vault folder: %s", err)
 	}
@@ -18,7 +19,7 @@ func GenerateFolderStructure() {
 	directories := []string{""}
 
 	for _, dir := range directories {
-		filepath := fmt.Sprintf("./Quranic Guidance/%s", dir)
+		filepath := fmt.Sprintf("%s/%s", workingDir, dir)
 		err = os.MkdirAll(filepath, 0750)
 		if err != nil {
 			log.Fatalf("Failed to create sub folder: %s", err)

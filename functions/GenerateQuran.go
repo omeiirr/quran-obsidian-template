@@ -13,7 +13,7 @@ import (
 	"github.com/omeiirr/quran-obsidian-template/templates"
 )
 
-func GenerateQuran(startSurah, endSurah int) {
+func GenerateQuran(workingDir string, startSurah, endSurah int) {
 
 	if startSurah < 1 || endSurah > 114 {
 		log.Fatal("Invalid range for Surahs.")
@@ -46,7 +46,7 @@ func GenerateQuran(startSurah, endSurah int) {
 		// Problem detected for surah-38 with Translation as `"The Letter \"Saad\""` from API
 		filename := strings.ReplaceAll(surah.Translation, "\"", "'")
 
-		surahFilepath := fmt.Sprintf("./Quranic Guidance/Surahs/%d %s (%s)", surah.Id, surah.Transliteration, filename)
+		surahFilepath := fmt.Sprintf("%s/Surahs/%d %s (%s)", workingDir, surah.Id, surah.Transliteration, filename)
 		err = os.MkdirAll(surahFilepath, 0750)
 		if err != nil {
 			log.Fatalf("Failed to create Surah folders: %s", err)

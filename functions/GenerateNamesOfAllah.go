@@ -12,7 +12,7 @@ import (
 	"github.com/omeiirr/quran-obsidian-template/templates"
 )
 
-func GenerateNamesOfAllah(embedded_file []byte) {
+func GenerateNamesOfAllah(workingDir string, embedded_file []byte) {
 	fmt.Println("Generating names of Allah...")
 	var names []models.NameOfAllah
 
@@ -21,7 +21,7 @@ func GenerateNamesOfAllah(embedded_file []byte) {
 		log.Fatal("Error during unmarshall: ", err)
 	}
 
-	file, err := os.OpenFile("./Quranic Guidance/Names of Allah.md", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(fmt.Sprintf("%s/Names of Allah.md", workingDir), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatalf("Failed to open file: %s", err)
 	}

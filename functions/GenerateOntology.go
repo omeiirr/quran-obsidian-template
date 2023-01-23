@@ -12,7 +12,7 @@ import (
 	"github.com/omeiirr/quran-obsidian-template/templates"
 )
 
-func GenerateOntology(embedded_file []byte) {
+func GenerateOntology(workingDir string, embedded_file []byte) {
 
 	var concepts []string
 
@@ -27,7 +27,7 @@ func GenerateOntology(embedded_file []byte) {
 		dir := filepath.Dir(concept)
 
 		// create the directory, including any necessary parent directories
-		err := os.MkdirAll(fmt.Sprintf("./Quranic Guidance/%s", dir), os.ModePerm)
+		err := os.MkdirAll(fmt.Sprintf("%s/%s", workingDir, dir), os.ModePerm)
 		if err != nil {
 			fmt.Println(err)
 		}
@@ -43,7 +43,7 @@ func GenerateOntology(embedded_file []byte) {
 		content := []byte(
 			fmt.Sprintf(templates.OntologyConceptTemplate, externalUrl))
 
-		err = os.WriteFile(fmt.Sprintf("./Quranic Guidance/%s", concept), content, 0660)
+		err = os.WriteFile(fmt.Sprintf("%s/%s", workingDir, concept), content, 0660)
 		if err != nil {
 			fmt.Println(err)
 		}

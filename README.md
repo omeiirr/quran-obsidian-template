@@ -7,18 +7,17 @@ Some folders are created by default to group similar topics together, and you ca
 The whole folder structure is as follows:
 ```
 Quranic Guidance
-| People
-| - Prophets
+| Concepts
+| - Artifact
+|   - Place of Worship
+|   - ...
+| - ...
+| - Weather Phenomenon
 |
 | Surahs
 | - 1 Al-Fatihah (The Opener)
 | - ...
 | - 114 An-Nas (Mankind)
-|
-| Themes
-| - Angels
-| - God
-| - Man
 |
 | Names Of Allah.md
 ```
@@ -73,5 +72,6 @@ If you have Go installed on your machine, you can also use it to setup the proje
 All contributions are welcome. Please feel free to submit issues and PRs for feature additions, bug-fixes, or enhancements.
 
 ### References
-This project uses the [quran-json API](https://github.com/risan/quran-json) and [allah-names](https://github.com/AzeemGhumman/allah-names) libraries.
+[Quran corpus](https://corpus.quran.com) has been used to source the `Concepts`.
+This project also uses the [quran-json API](https://github.com/risan/quran-json) and [allah-names](https://github.com/AzeemGhumman/allah-names) libraries.
 I extend my gratitude to their authors for their work.

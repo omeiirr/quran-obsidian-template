@@ -83,6 +83,8 @@ You are suggested to install the following Obsidian plug-ins for the best experi
 
 The Arabic font used in the demonstrations is KFGQPC Uthmanic Script Hafs.
 
+The theme being used is [Things](https://github.com/colineckert/obsidian-things).
+
 ### Contributing
 All contributions are welcome. Please feel free to submit issues and PRs for feature additions, bug-fixes, or enhancements.
 

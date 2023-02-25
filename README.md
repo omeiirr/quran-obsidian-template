@@ -42,7 +42,8 @@ The 99 names of Allah are listed in a table along with their meanings.
 Their location in the Quran is automatically linked to the particular Ayat(s).
 You can hover over the link to see a preview, or Ctrl + Click to open that Ayat in a separate tab.
 
-![image](https://user-images.githubusercontent.com/54888682/211848142-5abbfbdd-4fac-4bf6-a79d-b988ab6a4405.png)
+![image](https://user-images.githubusercontent.com/54888682/221333424-44ef609a-13e6-4366-8f83-f7da4f823434.png)
+
 
 
 ### Ayats
@@ -52,11 +53,12 @@ Tags are present in the metadeta at the top of every such page.
 By default, a `meccan` or `medinan` tag is added to every Ayat according to its place of revelation.
 You can add your own tags to group similar-themed Ayats together.
 
-![image](https://user-images.githubusercontent.com/54888682/211851606-b35c3b16-a493-452a-a049-f45e76acc98b.png)
+![image](https://user-images.githubusercontent.com/54888682/221333511-ecd04854-97a1-4019-b62d-5d5ba9fdba59.png)
 
 
 ### Graph View
-![image](https://user-images.githubusercontent.com/54888682/211851887-903016c7-9969-4e77-b4fc-54b3c1ecf42d.png)
+![image](https://user-images.githubusercontent.com/54888682/221333572-00aecdce-716f-4197-beaf-956aa92504ae.png)
+
 
 ---
 
@@ -71,6 +73,15 @@ If you have Go installed on your machine, you can also use it to setup the proje
 If you are unable to get the executable running on your system, you can directly download the compressed `QuranicGuidance` zip folder from [here](https://github.com/omeiirr/quran-obsidian-template/releases/download/v1.1.0/QuranicGuidance.zip) which contains all the features, and decompress it on your device.
 
 Happy learning! :)
+
+### Suggested Add-ons
+
+You are suggested to install the following Obsidian plug-ins for the best experience:
+- [Omnisearch](https://github.com/scambier/obsidian-omnisearch) for fuzzy search across the vault for specific words/phrases
+- [Dynamic RTL](https://github.com/mwxgaf/obsidian-dynamic-rtl) for automatic right-to-left alignment of Arabic text.
+- [Automatically Reveal Active File](https://github.com/shichongrui/obsidian-reveal-active-file) to reveal the active file automatically when you open it
+
+The Arabic font used in the demonstrations is KFGQPC Uthmanic Script Hafs.
 
 ### Contributing
 All contributions are welcome. Please feel free to submit issues and PRs for feature additions, bug-fixes, or enhancements.
